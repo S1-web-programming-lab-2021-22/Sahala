@@ -1,0 +1,28 @@
+<html>
+<head>
+</head>
+<body>
+<center>
+<h2>Calculate Reverse of a number</h2>
+<br><br>
+<label>enter any number : 
+<input type="text" id="num" ></label>
+<button onclick="reverse()">Reverse</button>
+<p id="a"></p> 
+<script>
+function reverse() {
+var n=document.getElementById("num").value;
+var rev=0, rem;
+var z=parseInt(n)
+while(z > 0)
+ {
+  rem = parseInt(z % 10);
+  rev = parseInt(rev * 10 + rem);
+  z = parseInt(z / 10);
+ }
+document.getElementById("a").innerHTML= rev ;
+}
+</script 
+</center>
+</body>
+</html>

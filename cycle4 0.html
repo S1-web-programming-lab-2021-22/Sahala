@@ -1,0 +1,28 @@
+<html>
+<head>
+<style>
+h3 {
+font-size: 40px;
+font-color: green;
+font-weight: bold;
+text-decoration: underline;
+}
+</style>
+</head>
+<body>
+<center>
+<h3>Display output in p tag</h3><br><br>
+<label>enter any string:
+<input type="text" id="str">
+</label>
+<button onclick="myFunction()">print</button>
+<p id="dis"></p>
+<script>
+function myFunction() {
+ var x=document.getElementById("str").value;
+ document.getElementById("dis").innerHTML=x;
+}
+</script>
+</center>
+</body>
+</html

@@ -1,0 +1,35 @@
+<html>
+<head>
+<style>
+body {
+}
+.button {
+margin-left: 50px;
+margin-bottom: 50px;
+padding: 15px 32px;
+color: white;
+background: Grey;
+border: none;
+}
+h2 {
+text-color: brown;
+text-decoration: underline;
+}
+</style>
+</head>
+<body><br><br>
+<center>
+<button class="button" onclick="change()">SetColor</button>
+<h2>JAVASCRIPT</h2>
+<p>Javascript is a client side scripting language used to make web pages interactive.
+Javascript was developed by Brendan Eich while he was working for Netscape Communications Corporation.
+On the client side,JavaScript is imlemented as interpreted language.</p>
+<script>
+function change() {
+var retvalue=prompt("Enter color:","Any color here");
+document.body.style.background=retvalue;
+}
+</script>
+</center>
+</body>
+</html>
